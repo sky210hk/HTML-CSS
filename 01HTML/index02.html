@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <!-- 주석 단축키 : ALT + SHIFT + A -->
+
+    <!-- block vs inline (보통 block이 더 큰 개념이라고 생각하자)-->
+
+    <!-- 블럭요소
+        1. 블럭요소는 블럭의 크기와 줄바꿈이 자동으로 됀다. (**한 줄 전체를 잡기 때문에)
+        2. 블럭요소 안에는 블럭과 인라인을 모두 가질 수 있습니다.
+        대표적인 블럭요소 : h1, p, div, ul, li, ol, dl, dd, form, table, section, article, footer, header, nav
+    -->
+
+    <div>블럭요소</div>
+    <div>블럭요소</div>
+    <div>블럭요소</div>
+
+    <div>
+        <div>블럭요소 안의 블럭요소1</div>
+        <div>블럭요소 안의 블럭요소2</div>
+        <span>인라인요소도 넣을 수 있다.</span>
+    </div>
+
+    <!-- 인라인요소
+        1. 인라인요소는 줄바꿈이 없습니다.
+        2. 인라인요소 안에는 인라인만 들어갈 수 있습니다.
+        대표적인 인라인요소(글씨관련) : img, a, b, string, span, small, label, input, del
+     -->
+
+    <span>인라인요소</span>
+    <span>인라인요소</span>
+    <span>인라인요소</span>
+
+    <hr>
+
+    <a>
+        <p>맞는걸까요? 이건 틀립니다. </p> <!-- 인라인요소 안에 블럭요소가 들어갔으므로 틀림 -->
+    </a>
+
+    <p>
+        <a>맞는걸까요? 이건 맞습니다. </a> <!-- 블럭요소 안에 인라인요소가 들어갔으므로 맞음 -->
+    </p> 
+
+    <span>
+        <label>맞는걸까요? 맞습니다. </label> <!-- 인라인요소 안에 인라인요소가 들어갔으므로 맞음 -->
+    </span>
+
+    
+</body>
+</html>

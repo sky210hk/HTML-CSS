@@ -1,0 +1,84 @@
+/* 위쪽헤더 */
+.header_col1 {
+    background-color: #EEEEEE;
+    height: 43px;
+}
+.header_col1 .top_col {
+    width: 1240px;
+    margin: 0 auto;
+}
+.header_col1 .top_col .top_width {
+    overflow: hidden; /* 부모영역(오버플로우히든) */
+    text-align: center;
+}
+/* 자식영역 플롯 left, right */
+.header_col1 .top_col .top_width .fl_left {float: left;}
+.header_col1 .top_col .top_width .fl_right {float: right;}
+
+/* 메뉴의 디스플레이 방식 : inline */
+.header_col1 .top_col .top_width .site_menu_left li {display: inline;}
+/* 메뉴 영역 디자인 */
+.header_col1 .top_col .top_width .site_menu_left li a {
+    display: inline-block;
+    color: #666666;
+    text-decoration: none;
+    width: 140px;
+    height: 42px;
+    line-height: 42px;
+    font-size: 14px;
+}
+/* 선택자가 붙여쓰기로 나오면 "그 클래스에 포함된"의 의미를 갖는다.*/
+.header_col1 .top_col .top_width .site_menu_left li.on a {
+    border-top: 1px solid #d2d0d0;
+    border-left: 1px solid #d2d0d0;
+    border-right: 1px solid #d2d0d0;
+    border-bottom: 5px solid #037fc3;
+    background-color: #fff;
+}
+/* 회원가입, 로그인 버튼 영역 디자인  */
+.header_col1 .top_col .top_width .site_menu_right a {
+    display: inline-block;
+    color: #666666;
+    text-decoration: none;
+    background-color: #ffff;
+    padding: 3px 8px;
+    margin-top: 5px;
+    border: 1px solid #999;
+}
+/* 아래쪽헤더 */
+.header_col2 {
+    height: 82px;
+}
+.header_col2 .top_col {
+    width: 1240px;
+    margin: 0 auto;
+}
+/* 위에서 top_width에 이미 오버플로우히든을 줬기 때문에 따로 쓰지않아도 됨 */
+.header_col2 .logo {
+    float: left;
+    display: block;
+    width: 180px;
+    height: 62px;
+    background-image: url("../img/blind_employ.png"); /* 경로참조 */
+    background-repeat: no-repeat;
+    margin-top: 26px;
+
+}
+.header_col2 .top_menu {
+    float: left;
+}
+.top_menu ul li {display: inline;}
+.top_menu ul li a {
+    display: inline-block;
+    height: 80px;
+    line-height: 80px;
+    color: #333333;
+    text-decoration: none;
+    padding: 0 8px;
+    margin: 0 3px;
+    font-size: 18px;
+    font-weight: 1000;
+}
+.top_hide {
+    display: none;
+}

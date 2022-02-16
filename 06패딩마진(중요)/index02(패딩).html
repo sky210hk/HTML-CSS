@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        body {background-image: url('img/grid.jpg');}
+        p {
+            width: 600px;
+            height: 100px;
+            border: 1px solid #777;
+            background-color: aqua;
+
+            /* 1개 쓰는 경우 : 모든 상하좌우에 10px 적용 */
+            padding: 10px;
+
+            /* 4개 쓰는 경우 : 위10px, 오른쪽20px, 아래10px, 왼쪽20px - 시계방향 */
+            padding: 10px 20px 10px 20px; 
+
+            /* 2개 쓰는 경우 : 위아래30px, 좌우20px */
+            padding: 30px 20px;
+        }
+    </style>
+
+</head>
+<body>
+    
+    <p>
+        패딩이란?
+        윤곽 기준 완쪽여백입니다. (상자크기 = width(600) + padding(40) + border(2) = 642)
+        패딩은 겹치지 않습니다.
+    </p>
+
+</body>
+</html>

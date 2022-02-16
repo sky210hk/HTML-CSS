@@ -1,0 +1,30 @@
+/* 공통 디자인 */
+* {padding: 0; margin: 0; box-sizing: border-box;}
+
+/* 웹 폰트 */
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@500&display=swap');
+body, html {
+    font-family: 'Noto Sans KR', sans-serif;
+    width: 100%;
+    min-width: 350px;
+}
+ul, li, ol, dd, dl {list-style: none;} /* · 형식 제거 */
+img {max-width: 100%; height: auto;} /* 이미지가 너비에 맞춰서 자동지정 */
+input, textarea, button, select {
+    appearance: none; /* 브라우저 별로 고유하게 정의된 디자인 사용 x */
+}
+/* 헤더가 fixed로 올라와있고 높이가 50px이기 때문에 */
+section, article {
+    margin-top: 50px;
+}
+/* 부트스트랩버튼 */
+.form-control {
+    border-radius: 0;
+}
+.form-control:focus {
+    border: 1px solid #000;
+    box-shadow: 0;
+}
+.btn { 
+    border-radius: 0;
+}
