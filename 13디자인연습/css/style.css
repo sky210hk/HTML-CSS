@@ -12,7 +12,7 @@
     border: none;
 }
 .custom-header .navbar-inverse {
-    background-color: #282a35;
+    background-color: #282a28;
 }
 /* active클래스 하위 a태그 */
 .custom-header .navbar-inverse .navbar-nav > .active > a { 

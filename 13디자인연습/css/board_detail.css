@@ -1,0 +1,102 @@
+.detail-text {
+    min-height: 345px;
+}
+.detail-text-title {
+    font-size: 24px;
+    margin: 0 0 10px;
+}
+.detail-text-price {
+    font-size: 30px;
+    padding: 10px 0;
+    margin: 0 0 10px;
+    border-top: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+}
+.detail-text-delivery {
+    font-size: 14px;
+    color: #888888;
+}
+.detail-controll-price,
+.detail-controll-order {
+    overflow: hidden;
+}
+.detail-controll-price-left {
+    float: left;
+    color: #333333;
+    font-size: 18px;
+    margin: 0 0 10px;
+    line-height: 45px;
+}
+.detail-controll-price-right {
+    float: right;
+    color: #333333;
+    font-size: 30px;
+    font-weight: bold;
+
+}
+.detail-controll-order-cart {
+    float: left;
+    color: #333333;
+    padding: 6px 12px;
+    width: 50%;
+    height: 60px;
+    font-size: 18px;
+    background-color: #fff;
+    border: 1px solid #777;
+}
+.detail-controll-order-purchase {
+    float: right;
+    color: #ffffff;
+    padding: 6px 12px;
+    width: 50%;
+    height: 60px;
+    font-size: 18px;
+    background-color: #337AB7;
+    border: none;
+}
+.reply-wrap {
+    border: 1px solid #ddd;
+    background-color: #f5f5f5;
+    position: relative;
+    padding: 10px;
+}
+.reply-img {
+    position: absolute;
+    left: 10px;
+    top: 10px;
+}
+.reply-content {
+    padding-left: 50px;
+}
+.reply-control {
+    overflow: hidden;
+}
+.reply-input {
+    float: left;
+}
+.reply-control > button {
+    float: right;
+}
+.reply-content textarea {
+    resize: vertical; /* 수직이동 */
+    height: 150px;
+    margin-bottom: 5px;
+    transition: all 0.3s linear 0s;
+}
+.reply-content textarea:focus {
+    height: 250px;
+}
+.reply-content input {
+    width: 200px;
+    margin-bottom: 5px;
+}
+.reply-group {
+    overflow: hidden;
+}
+.reply-group > a {
+    float: right;
+    color: #777;
+}
+.reply-content > p {
+    margin: 0;
+}

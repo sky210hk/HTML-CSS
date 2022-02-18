@@ -1,0 +1,142 @@
+/* header영역전체 */
+header {
+    border-top: 4px solid green;
+}
+/* wrap영역전체 */
+.wrap {
+    border-bottom: 1px solid #999;
+}
+/* 위쪽 헤더 */
+.wrap-top {
+    overflow: hidden;
+    width: 1008px;
+    margin: 0 auto;
+}
+.wrap-top .wrap-left,
+.wrap-top .wrap-right {
+    color: #999;
+    font-size: 12px;
+}
+.wrap-top .wrap-left {
+    float: left;
+    padding: 11px 7px;
+}
+.wrap-top .wrap-right {
+    float: right;
+    padding: 11px 7px;
+}
+/* 가운데 헤더 */
+.wrap-mid {
+    overflow: hidden;
+    width: 1008px;
+    margin: 0 auto;
+}
+.wrap-mid .wrap-mid-left a {
+    float: left;
+}
+.wrap-mid .wrap-mid-left .search-text-icon {
+    float: left;
+    width: 330px;
+    height: 40px;
+    border: none;
+    overflow: hidden;
+    margin: 36px 0 0 11px;
+    background-image: url("../img/search-text.png");
+    background-repeat: no-repeat;
+}
+.wrap-mid .search-text-icon input[type="text"] {
+    float: left;
+    width: 260px;
+    height: 25px;
+    margin: 7px 0 0 18px;
+    border: none;
+}
+.wrap-mid .search-text-icon button {
+    width: 45px;
+    height: 40px;
+    background-image: url("../img/search-icon.png");
+    border: none;
+    float: right;
+    background-color: white;
+}
+.wrap-mid .wrap-mid-right {
+    float: right;
+    margin-top: 10px;
+}
+/* 아랫쪽 헤더 */
+.wrap-bottom {
+    overflow: hidden;
+    width: 1008px;
+    margin: 0 auto;
+}
+.wrap-bottom .main-gnb {
+    float: left;
+}
+.wrap-bottom .main-gnb li {
+    display: inline;
+}
+.wrap-bottom .main-gnb li a {
+    display: inline-block;
+    text-align: center;
+    font-size: 15px;
+    font-weight: 700;
+    color: #000;
+    text-decoration: none;
+    width: 75px;
+    height: 40px
+}
+.wrap-bottom .sub-gnb {
+    float: right;
+}
+.wrap-bottom .sub-gnb li {
+    display: inline;
+}
+.wrap-bottom .sub-gnb a {
+    display: inline-block;
+    text-align: center;
+    font-size: 15px;
+    font-weight: 700;
+    color: #000;
+    text-decoration: none;
+    width: 75px;
+    height: 40px
+}
+/* 섹션 영역 */
+section .wrap {
+    width: 1008px;
+    margin: 0 auto;
+}
+.wrap .conts {
+    overflow: hidden;
+}
+.wrap .list_wrap {
+    float: left;
+    width: 480px;
+}
+.wrap .list_wrap ul {
+    overflow: hidden;
+}
+.wrap .list_wrap ul li {
+    float: left;
+    width: 33.3333%;
+    position: relative;
+    margin-bottom: 1px;
+}
+.wrap .list_wrap ul li > a {
+    display: inline-block;
+    position: relative;
+}
+.wrap .list_wrap ul li > a > .singer {
+    position: absolute;
+    left: 0;
+    bottom: 0px;
+    width: 100%;
+    height: 22px;
+    line-height: 22px;
+    background-color: #000;
+    opacity: .9;
+    color: #fff;
+    text-align: center;
+    font-size: 12px;
+}
+
