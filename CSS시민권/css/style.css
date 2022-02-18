@@ -1,3 +1,5 @@
+/* 기본설정 */
+* {margin: 0; padding: 0; list-style: none;}
 /* header영역전체 */
 header {
     border-top: 4px solid green;
@@ -101,14 +103,15 @@ header {
     width: 75px;
     height: 40px
 }
-/* 섹션 영역 */
-section .wrap {
+/* 섹션 영역(기본설정) */
+.wrap {
     width: 1008px;
     margin: 0 auto;
 }
 .wrap .conts {
     overflow: hidden;
 }
+/* 섹션 영역 - 리스트랩 */
 .wrap .list_wrap {
     float: left;
     width: 480px;
@@ -139,4 +142,207 @@ section .wrap {
     text-align: center;
     font-size: 12px;
 }
-
+/* 섹션 영역 - 슬라이드랩 */
+.slide_wrap {
+    width: 236px;
+    float: left;
+    margin-left: 4px;
+}
+/* 섹션 영역 - 유저랩 */
+.user_wrap {
+    width: 280px;
+    float: left;
+    margin-left: 8px;
+}
+/* 섹션 영역 - 유저랩(로그인랩) */
+.user_wrap .login_wrap {
+    background-color: #fbfbfb;
+    height: 115px;
+    padding: 0 17px;
+    border: 1px solid #e0e0e0;
+    text-align: center;
+}
+.user_wrap .login_wrap .top_area {
+    padding: 24px 0 15px 0;
+}
+.user_wrap .login_wrap .top_area .left,
+.user_wrap .login_wrap .top_area .right {
+    font-size: 11px;
+    color: #939393;
+}
+.user_wrap .login_wrap .top_area .left {
+    float: left;
+}
+.user_wrap .login_wrap .top_area .right {
+    float: right;
+}
+.user_wrap .login_wrap button {
+    width: 100%;
+    height: 42px;
+    background-color: #00d344;
+    color: #fff;
+    border: none;
+    margin-top: 10px;
+}
+/* 섹션 영역 - 유저랩(프로모션랩) */
+.user_wrap .promotion_wrap {
+    margin-top: 10px;
+}
+/* 섹션 영역 - 메인 배너 */
+.main_banner {
+    margin-top: 20px;
+}
+/* 섹션 영역 - 핫 이슈 */
+.hot_issue {
+    float: left;
+    width: 704px;
+}
+.hot_issue > h4 {
+    border-bottom: 1px solid #999;
+    padding: 5px 0;
+}
+.hot_issue > h4 > span {
+    font-size: 9px;
+    color: #999;
+}
+.hot_issue ul {
+    overflow: hidden;
+}
+.hot_issue ul li {
+    margin-left: 0;
+    float: left;
+    width: 223px;
+    margin: 16px 0 0 16px;
+}
+.hot_issue ul li:nth-child(1),
+.hot_issue ul li:nth-child(4) {
+    margin: 16px 0 0 0;
+}
+.hot_issue .inner a {
+    text-decoration: none;
+}
+.hot_issue .inner a > span {
+    display: block;
+    margin-top: 5px;
+}
+.hot_issue .inner .title {
+    font-size: 15px;
+    color: #000;
+}
+.hot_issue .inner .cont {
+    font-size: 10px;
+    color: #777;
+}
+.hot_issue .inner .hit {
+    font-size: 10px;
+    color: green;
+}
+.hot_issue .inner .check {
+   color: #777;
+}
+/* 섹션 영역 - 멜론 차트 */
+.wrap .chart {
+    width: 280px;
+    float: left;
+    margin-left: 24px;
+    height: 472px;
+    margin-top: 20px;
+}
+.wrap .chart h4 {
+    border-bottom: 1px solid #999;
+    padding: 5px 0;
+}
+.chart .chart_wrap {
+    border: 1px solid #999;
+    margin-top: 16px;
+}
+.chart_wrap .chart_top {
+    text-align: center;
+    overflow: hidden;
+}
+.chart_wrap .chart_top li a {
+    display: block;
+    width: 33.3333%;
+    float: left;
+    text-decoration: none;
+    color: #999;
+    padding: 5px 0;
+    font-size: 14px;
+}
+.chart_wrap .chart_top li a.tab_link {
+    border-top: 2px solid #8ac121;
+}
+.chart_rank {
+    height: 360px;
+}
+.chart_wrap .chart_rank li {
+    width: 278px;
+    border-top: 1px solid #999;
+    overflow: hidden;
+}
+.chart_wrap .chart_rank li.on {
+    height: 66px;
+}
+/* 멜론 차트 - 순위 */
+.chart_wrap .chart_rank li.on .rank_num {
+    margin-top: 20px;
+}
+.chart_wrap .chart_rank .rank_num {
+    float: left;
+    width: 34px;
+    font-size: 20px;
+    font-weight: 700;
+    margin: 3px 0 0 8px;
+}
+/* 멜론 차트 - 순위 변동 */
+.chart_wrap .chart_rank li.on .rank_cnt {
+    margin-top: 25px;
+}
+.chart_wrap .chart_rank .rank_cnt {
+    float: left;
+    width: 22px;
+    font-size: 11px;
+    margin: 8px 0 0 8px;
+}
+/* 멜론 차트 - 썸네일 */
+.chart_wrap .chart_rank li.on .thumb {
+    position: relative;
+    padding: 10px 0 0 60px;
+}
+.chart_wrap .chart_rank .thumb {
+    float: left;
+    margin: 3px 0 0 8px;
+}
+.thumb img {
+    display: inline;
+    position: absolute;
+    top: 8px;
+    left: 0;
+}
+.thumb .rank_info span {
+    display: inline;
+}
+.rank_info .rank_name a {
+    text-decoration: none;
+    color: #000;
+}
+.rank_info .rank_cont a {
+    text-decoration: none;
+    color: #777;
+}
+/* 멜론 차트 - 하단 버튼 + 더보기 */
+.chart_btn_area {
+    border-top: 1px solid #999;
+    overflow: hidden;
+    padding: 6px 8px;
+}
+.chart_btn_area > button {
+    float: left;
+    border: 1px solid #999;
+    background-color: #fbfbfb;
+    padding: 5px 5px 5px 15px;
+    font-size: 12px;
+}
+.chart_btn_area > span {
+    float: right;
+}
